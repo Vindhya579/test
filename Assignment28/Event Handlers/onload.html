@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Event haldling in Javascript</title>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+    <script type="text/javascript">
+
+        function time()
+        {
+            let d=new Date();
+            let ty=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+            document.frmty.timetxt.value=ty;
+            setInterval("time()",1000);
+        }
+        setTimeout(function(){
+            document.write("welcome to ANKUTHOTAPALLE","<br/>");
+        },5000);
+        </script>
+</head>
+<body onload="time()">
+    <div class="col-sm-6">
+        <h1>display time</h1>
+        <form name="frmty">
+            <filedset class="form-group">
+                <div class="row">
+                    <label class="col-sm-4">Date Dispaly</label>
+                    <div class="col-sm-6">
+                        <input time="text" name="timetxt" class="form-control" value=""/>
+                    </div>
+                </div>
+</body>
+</html>

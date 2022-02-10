@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object concept in javascript</title>
+        <script type="text/javascript">
+            //defining a class
+            class car
+            {
+                constructor(name,engine)
+                {
+                    this.name=name;
+                    this.engine=engine;
+                }
+                getDetails()
+                {
+                    return(`the name ${this.name} , engine ${this.engine}`);
+                }
+            }
+            let car1=new car("Swift","1000cc");
+            let car2=new car("BMW","700cc");
+            //access the objects outside the class
+            console.log(`the details of car :name ${car1.name} , and engine ${car1.engine}`);
+            console.log(`the details of car :name ${car2.name} , and engine ${car2.engine}`);
+            console.log(car1.getDetails());
+            console.log(car2.getDetails());
+        </script>
+    </head>
+</html>

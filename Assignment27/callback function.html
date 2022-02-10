@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Callbackction in Javascript</title>
+    <script type="text/Javascript">
+       //Callback function : A function that is passed as a parameter/argument inside another function is called callback function
+       let num1=2;
+       let num2=5;
+       Mycalculator(num1,num2,Mydisplayer);
+       
+       function Mydispalyer(result)
+       {
+            document.write("the value of result :"+result+"<br/>");
+       }
+        function Mycalculator(n1,n2,MyCallback){
+           let n3=(n1+n2);
+           MyCallback(n3);
+       }
+       
+    </script>
+</head>
+<body>
+
+</body>
+</html>

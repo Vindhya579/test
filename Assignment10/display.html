@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CSS Display</title>
+    <style>
+    h1{
+        background-color: darkgoldenrod;
+        color: white;
+        display: inline;
+        padding:3px;
+        margin:3px;
+        text-align: center;
+    }
+    span{
+        background-color: yellowgreen;
+        color: tomato;
+        padding: 5px;
+        margin: 5px;
+        display: block;
+    }
+    a:hover{
+        background-color: yellow;
+        width:15%;
+    }
+    a{
+        text-decoration: none;
+        background: burlywood;
+        color: white;
+        padding: 5px;
+        display: block;
+    }
+    h2{
+        background-color: red;
+        color: white;
+        text-align: center;
+        display: none;
+
+    }
+    .parent{
+        background-color: gray;
+        padding: 50px,20px ;
+        text-align: center;
+    }
+    .child{
+        background-color: blueviolet;
+        color: white;
+        padding:15px;
+        width:200px;
+        display: inline-block;
+        box-shadow: yellowgreen;
+        border-radius: 10px;
+        
+
+    }
+
+    </style>
+</head>
+<body>
+    <!-- convert block into inline-->
+    <h><strong>Avaliable Items :</strong><h>
+    <div>
+        <h1>Chicken Biriyani</h1>
+        <h1>Veg Biriyani</h1>
+        <h1>Maton Biriyani</h1>
+    </div>
+    <!--convert inline into block-->
+    <p>Types of dishes avaliable with :<span>1.chilli Chicken with tomato sauce</span>
+        <span>2.veg Biryan with panner curry and keera with onion</span>
+        <span>3.Motan Biriya with egg and Grevy</span>
+        Free Thumbsup and Water Bottle
+    </p>
+    <!--a-->
+    <a href="https://www.google.com">Google</a>
+    <a href="hhtps://www.fb.com">Face Book</a>
+    <a href="https://www.gmail.com">Gmail</a>
+    <a href="https://www.youtube.com">Youtube</a>
+    <!--Hiding elements-->
+    <div>
+        <h2>Hiding Element</h2>
+    </div>
+    <!--inline-block-->
+    <div class="parent">
+        <div class="child">
+            <p>First wash the chicken and boli it with water keep pan in stove heat it and pour the oil then onions 
+                fry it then add all masalas to it mix it well after that add chickent to it then fry it 30 mins then add chicken to it fry for some time
+                then add rice to it pour some water and leave it to boli and cook well</p>
+        </div>
+        <div class="child">
+            <p>First wash the chicken and boli it with water keep pan in stove heat it and pour the oil then onions 
+                fry it then add all masalas to it mix it well after that 
+                then add rice to it pour some water and leave it to boli and cook well</p>
+        </div>
+        <div class="child">
+            <p>First wash the chicken and boli it with water keep pan in stove heat it and pour the oil then onions 
+                fry it then add all masalas to it mix it well after that add motan to it ten fry it 30 mins then add chicken to it fry for some time
+                then add rice to it pour some water and leave it to boli and cook well</p>
+        </div> 
+    </div>       
+    
+    
+</body>
+</html>

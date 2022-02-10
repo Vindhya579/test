@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Form Validation with regular experssion</title>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+    <script type="text/javascript">
+        //defining a function to dispaly error message
+        function printErr(eleId,hintMsg)
+        {
+            document.getElementById(eleId).innerHTML=hintMsg;
+        }
+        //defining validate form function
+        function validateform()
+        {
+            let UserName=document.userfrm.UserName.value;
+            let product=document.userfrm.product.value;
+            let DoctorAppointment=document.userfrm.DoctorAppointment.value;
+            let product=[];
+            let checkboxes=document.getElementByName("knownlanguages");
+            for(let i=0;i<checkboxes.length;i++)
+            {
+                if(chechboxes[i].checked)
+                {
+                    product.push(checkboxes[i].value);
+                }
+            }
+            //defining error variables with a default value
+            let UserNameErr=productErr=DoctorAppointmentErr=true;
+            //validate fullname
+            if(UserName==" ")
+            {
+                printError("UserNameErr","please enter your UserName");
+            }
+            else
+            {
+                let regexp=/^(?=.[a-z])(?=[A-Z])(?=.[\s])[a-zA-Z\s]{4,7}$/;
+                if(regexp.test(UserName==flase))
+                {
+                    printErroor("UserNameErr","please enter a valid UserName");
+                }
+                else
+                {
+                    printError("UserName","");
+                    UserNameErr=flase;
+                }
+            }
+            //mobile number
+            if(DoctorAppointment==" ")
+            {
+                printError("DoctorAppointmentErr","please enter your DoctorAppointment");
+            }
+            else
+            {
+                let regexp=/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+                if(regexp.test(DoctorAppointment==flase))
+                {
+                    printErroor("DoctorAppointmentErr","please enter a valid DoctorAppointmentErr");
+                }
+                else
+                {
+                    printError("DoctorAppointment","");
+                    DoctorAppointmentErr=flase;
+                }
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+ <form name="userfrm" onsubmit="return validateform()" action="#">
+    <div class="row">
+    <div class="col-sm-12">
+        <h1>Validation Form with Regular Expression</h1>
+            <filedset="form-group mb-3">
+                <div class="row">
+                    <label class="col-sm-2 col-form-label text-sm-end">UserName</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="UserName" id="fullName" value="" placeholder="" class="form-control"/>
+                            <div class="text-danger" id="fullNameErr"></div>
+                        </div>
+                </div>
+            <!--Checkbox-->
+            <filedset="form-group">
+            <div class="row">
+                <label class="col-sm-2 col-form-label text-sm-end">Products </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input type="checkbox"  class="form-check-input "name="" id="" />laptop
+                        <input type="checkbox"  class="form-check-input "name="" id="" />Realme 7i
+                        <input type="checkbox"  class="form-check-input "name="" id="" />Redme
+                        <input type="checkbox"  class="form-check-input "name="" id="" />Oppo
+                        <input type="checkbox"  class="form-check-input "name="" id="" />computer
+                        <input type="checkbox"  class="form-check-input "name="" id="" />blue tooth
+                        <input type="checkbox"  class="form-check-input "name="" id="" />head set
+                        <input type="checkbox"  class="form-check-input "name="" id="" />Samsung
+                        
+                    </div>
+                </div>
+            </div>
+            </filedset>
+            <filedset="form-group">
+            <div class="row">
+                <label class="col-sm-2 col-form-label text-sm-end">Doctor Appointment</label>
+                <div class="col-sm-10">
+                    <input type="date" sze="30" class="form-control">
+                </div>
+            </div>
+            </filedset>
+            <filedset="form-group">
+            <div class="row">
+                <label class="col-sm-2 col-form-label text-sm-end"></label>
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </div>
+            </filedset>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

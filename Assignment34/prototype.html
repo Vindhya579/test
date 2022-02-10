@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encapsulation concept in javascript</title>
+        <script type="text/javascript">
+            function book(title,author)
+            {
+                this.title=title;
+                this.author=author;
+            }
+            var mybook=new book("victory","diviyanka");
+            book.prototype.price=null;
+            mybook.price=700;
+            console.log(`The tile of book : ${mybook.title} and author : ${mybook.author} , price ${mybook.price}`);
+        </script>
+    </head>
+<body>
+</body>
+</html>

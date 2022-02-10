@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bootstrap concepts</title>
+    <meta charset="utf-8"/>
+    <meta name="keyword" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-space=1,shrink-to-fit=no"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    .header{
+        border-bottom: 1px solid brown;
+        text-align: center;
+        color: black;
+    }
+    .leftpanel{
+        background-color: navajowhite;
+    }
+    .centerpanel{
+        background-color:white;
+        color: black;
+    }
+    .table{
+        background-color: black;
+        color: white;
+    }
+    .tablepannel{
+        background-color: white;
+        color: black;
+    }
+    .rightpanel{
+        background-color: paleturquoise;
+    }
+    .footer{
+        border-top:1px solid brown;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="col-sm-12">
+                <h1><strong>Registration form</strong></h1>
+            </div>
+        </div>
+        <!--two column-->
+        <div class="row">
+            <div class="col-sm-6 centerpanel">
+              <form>
+                    <div class="mb-3">
+                      <label class="form-label">Email</label>
+                          <input type="text" class="form-control" name="email" id="email" placeholder="@rguktrkv.ac.in"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">password</label>
+                            <input type="text" class="form-control" name="password" id="password" placeholder="@0n#279"/>
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="email" id="email" placeholder="@rguktrkv.ac.in"/>
+                        <label class="form-check-label">rememberme</label>
+                    </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    </form>
+                <hr/>
+                <form>
+                    <div class=" row mb-3">
+                        <label class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="" id="" value=""placeholder="" class="form-control"/>
+                            </div>
+                    </div>
+                    <div class=" row mb-3">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="" id="" value=""placeholder="" class="form-control"/>
+                            </div>
+                    </div>
+                    <div class=" row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input type="checkbox"  class="form-check-input "name="" id="" />
+                                <label class="form-check-label">remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10 offset-sm-2">
+                            <button type="submit" class="btn btn-success">Sign-in</button>
+
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row align-items-center g-3">
+                        <div class="col-auto">
+                                <label class="visually-hidden">Email</label>
+                                <input type="text" name="" id="" value="" placeholder="@rguktrkv.ac.in" class="form-control"/>
+                        </div>
+                        <div class="col-auto">
+                            <label class="visually-hidden">Password</label>
+                            <input type="text" name="" id="" value="" placeholder="@24#O1" class="form-control"/>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                                <label class="form-check-label">rememberme</label>
+
+                            </div>
+                         </div>
+                         <div class="col-auto">
+                            <button trype="submit" class="btn btn-warning">Submit</button>
+                         </div>
+
+                    </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

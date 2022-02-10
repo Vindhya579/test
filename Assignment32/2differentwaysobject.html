@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encapsulation concept in javascript</title>
+        <script type="text/javascript">
+            // defining object usng object literals
+            let person=
+            {
+                name:'vindhya',
+                age:20,
+
+                getDetails()
+                {
+                    return(`name of person : ${person.name}, and age ${person.age}`);
+                },
+            }
+            console.log(person.getDetails());
+            //defining the object using constructor
+            function Person(name,age)
+            {
+                    this.name=name;
+                    this.age=age;
+            }  
+            let Person1=new Person("vindhya",20);
+            let Person2=new Person("navya",24);
+            console.log(`the name is :${Person1.name} , and age : ${Person1.age}`);
+            console.log(`the name is :${Person2.name} , and age : ${Person2.age}`);
+        </script>
+    </head>
+</html>

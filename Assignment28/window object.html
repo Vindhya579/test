@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>clearInterval in event handlingn Javascript</title>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+    <script type="text/javascript">
+    const myInterval=setInterval(myTimer,1000);
+    function myTimer()
+    {
+        const date = new Date();
+        document.getElementById("demo").innerHTML=date.toLocaleTimeString();
+    }
+    function myStop()
+    {
+        clearInterval(myInterval);
+    }
+    </script>
+</head>
+<body>
+    <h1>window object</h1>
+    <h2>setInterval and clearInterval</h2>
+    <p id="demo"></p>
+    <button onclick="myStop()">stop the time</button>
+</body>
+</html>

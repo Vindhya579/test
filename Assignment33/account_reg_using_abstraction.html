@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encapsulation concept in javascript</title>
+        <script type="text/javascript">
+            function account(first_name,last_name,mobile_no,acc_type,address)
+            {
+                this.first_name="Gaddam";
+                this.last_name="vindhya";
+                this.mobile_no=9989105700;
+                this.acc_type="Business";
+                this.address="2-80,bamglore,pn:217247";
+            }
+            account.prototype.display=function()
+            {
+                return(`The name of Account :${this.first_name} ${this.last_name} , and mobile number :${this.mobile_no} and account type :${this.acc_type} and Address : ${this.address}`); 
+            }
+            var account=new account();
+            console.log(account.display());
+        </script>
+    </head>
+<body>
+</body>
+</html>

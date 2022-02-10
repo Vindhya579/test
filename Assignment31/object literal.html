@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object concept in javascript</title>
+        <script type="text/javascript">
+            //object is a unique entity that contains properties and methods 
+            let student ={
+                //properties
+                first_name:"gaddam",
+                last_name:"Vindhya",
+                year:"E-3",
+                course:"CSE",
+                mobile :"9989105700",
+                //methods
+                details:function()
+                {
+                    return(`The name of a student :${student.first_name} ${student.last_name}`);
+                },
+                GetFunction:function()
+                {
+                    return(`The year and course of a student : ${student.year} , ${student.course}`);
+                },
+                contact:function()
+                {
+                    return(`The contact number of a student : ${student.mobile}`);
+                },
+                //object inside object
+                Student_address :
+                {
+                    State:"Andhra Pradesh",
+                    District:"chittoor",
+                    Area:"Punganur",
+                    Pincode:"517257",
+                }
+
+            }
+            console.log(student.details());
+            console.log(student.GetFunction());
+            console.log(student.contact());
+            console.log(`Student Address : ${student.Student_address.State} ,${student.Student_address.District} ,${student.Student_address.Area} ,${student.Student_address.Pincode}`);
+            
+        </script>
+    </head>
+<body>
+</body>
+</html>

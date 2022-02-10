@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encapsulation concept in javascript</title>
+        <script type="text/javascript">
+            class person
+            {
+                constructor(name)
+                {
+                    this.name=name;
+                }
+                greet()
+                {
+                    console.log(`hello ${this.name}`);
+                }
+            }
+            class student extends person
+            {
+                //if there is no method or object then it goes to parent class
+                pass
+            }
+            let student1=new student("vindhya");
+            student1.greet();
+        </script>
+    </head>
+<body>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body{
+    background-color: #eaecee;
+}
+.container{
+    background-color: #fffeaf;
+}
+.header{
+    border-bottom: 1px solid firebrick;
+}
+.rightpanel{
+    background-color: rgb(212, 0, 255);
+}
+.footer{
+    border-top:1px solid fuchsia;
+}

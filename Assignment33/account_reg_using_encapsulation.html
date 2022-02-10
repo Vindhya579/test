@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encapsulation concept in javascript</title>
+        <script type="text/javascript">
+            class account
+            {
+                constructor()
+                {
+                    var first_name;
+                    var last_name;
+                    var mob_no;
+                    var acc_type;
+                    var address;
+                }
+                setfirst_Name(first_name)
+                {
+                    this.first_name=first_name;
+                }
+                getfirst_Name()
+                {
+                    return this.first_name;
+                }
+                setlast_Name(last_name)
+                {
+                    this.last_name=last_name;
+                }
+                getlast_Name()
+                {
+                    return this.last_name;
+                }
+                setMob_No(mob_no)
+                {
+                    this.mob_no=mob_no;
+                }
+                getMob_No()
+                {
+                    return this.mob_no;
+                }
+                setAcc_type(acc_type)
+                {
+                    this.acc_type=acc_type;
+                }
+                getAcc_type()
+                {
+                    return this.acc_type;
+                }
+                setAddress(address)
+                {
+                    this.address=address;
+                }
+                getAddress()
+                {
+                    return this.address;
+                }
+            }
+            var account1=new account();
+            account1.setfirst_Name("Gaddam");
+            account1.setlast_Name("vindhya");
+            account1.setMob_No(9989105700);
+            account1.setAcc_type("business");
+            account1.setAddress("2-80,Banglore,pin:217247");
+            console.log(` The Name of Accountant : ${account1.getfirst_Name()} ,${account1.getlast_Name()}, mobile Number :${account1.getMob_No()},account type : ${account1.getAcc_type()} , Address :${account1.getAddress()}`);
+        </script>
+    </head>
+<body>
+</body>
+</html>

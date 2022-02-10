@@ -1,0 +1,27 @@
+body{
+    background:darkgoldenrod;
+}
+h1{
+    color:yellow;
+    font-size:22px;
+    font-style:chiller;
+    text-align:center;
+}
+h2{
+    color:blue;
+    font-size:25px;
+    font-style:chiller;
+    text-align:center; 
+}
+p{
+    color:green;
+    font-size:30px;
+    font-style:chiller;
+    text-align:center;
+}
+p{
+    color:pink;
+    font-size:30px;
+    font-style:chiller;
+    text-align:center;
+}

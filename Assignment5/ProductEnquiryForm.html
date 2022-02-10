@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>product enquiry details</title>
+</head>
+<body>
+    <h2>Enquire about product</h2>
+    <form method="post" action="[~[*id*]~]">
+        <input type="hidden" name="formid" value="feedbackForm" />
+        <p><label for="name">Your Name: *</label>
+        <input type="text" name="name" maxlength="60" eform="Your Name:name:1" /></p>
+        <p><label for="email">Your Email: *</label>
+        <input type="text" name="email" size="40" maxlength="40" eform="Your Email Address:email:1" /></p>
+        <p><label accesskey="c" for="comments">Your Enquiry: </label>
+        <textarea cols="40" rows="10" name="comments" eform="Comments:html:1"></textarea></p>
+       
+        <div class="verification">
+            <p>Please enter the anti spam code below:</p>
+            <div class="vericode">
+                <label accesskey="c" for="vericode">verification code:</label>
+                <input type="text" name="vericode" size="20" />
+            </div>
+        </div>    
+        <p class="clearfix"><input type="submit" name="submit" value="Submit my Enquiry" class="submit"></p>
+    </form>

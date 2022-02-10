@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bootstrap concepts</title>
+    <meta charset="utf-8"/>
+    <meta name="keyword" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-space=1,shrink-to-fit=no"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    .header{
+        border-bottom: 1px solid brown;
+        text-align: center;
+        color: black;
+        background-color:gray;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="col-sm-12">
+                <h1><strong>Lists</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 centerpanel">
+                <!--list-->
+                <ul>
+                    <li>Sandwhich</li>
+                    <li>Pizza</li>
+                    <ul>
+                        <li>Veg Pizza</li>
+                        <li>Chiken Pizza</li>
+                        <li>Panner Pizza</li>
+                    </ul>
+                    <li>Burger</li>
+                    <li>Pani puri</li>
+                </ul>
+                <hr/>
+                <ul class="list-unstyled">
+                     <li>Sandwhich</li>
+                     <li>Pizza</li>
+                     <ul>
+                         <li>Veg Pizza</li>
+                         <li>Chiken Pizza</li>
+                         <li>Panner Pizza</li>
+                     </ul>
+                     <li>Burger</li>
+                     <li>Pani puri</li>
+                 </ul>
+             <hr/>
+                 <ul>
+                     <li>Chapathi</li>
+                     <li>Biriyani</li>
+                     <li>Veg Biriyani</li>
+                     <li>Chiken Biriyani</li>
+                 </ul>
+             <hr/>
+                 <ul class="list-inline">
+                     <li class="list-inline-item">Chapathi</li>
+                     <li class="list-inline-item">Biriyani</li>
+                     <li class="list-inline-item">Veg Biriyani</li>
+                     <li class="list-inline-item">Chiken Biriyani</li>
+                 </ul>
+             <hr/>
+                 <dl class="row">
+                     <dt class="col-sm-3">HTML</dt>
+                     <dd class="col-sm-9">Full Form : Hyper Text Markup Language</dd>
+                 </dl>
+                 <dl class="row">
+                     <dt class="col-sm-3 text-truncate">What is clientside Scripting</dt>
+                     <dd class="col-sm-9">The client side Scripting is part of your program excution at Browserend</dd>
+                 </dl>
+             <hr/>
+             <!--list group items-->
+             <ul class="list-group list-group-flush list-group-numbered w-50">
+                 <li class="list-group-item active">Pictures</li>
+                 <li class="list-group-item">Documents</li>
+                 <li class="list-group-item disabled">Videos</li>
+                 <li class="list-group-item ">Music</li>
+             </ul>
+             <hr/>
+             <!--checkbox-->
+             <div class="row">
+             <div class="col-sm-6 list-group w-50">
+                 <lable class="list-group-item">
+                     <input type="checkbox" class="form-check-input me-1" name="" value=""/>Sandwhich
+                 </lable>
+                 <lable class="list-group-item">
+                     <input type="checkbox" class="form-check-input me-1" name="" value=""/>Pizza
+                 </lable>
+                 <lable class="list-group-item">
+                     <input type="checkbox" class="form-check-input me-1" name="" value=""/>Burger
+                 </lable>
+                 <lable class="list-group-item">
+                     <input type="checkbox" class="form-check-input me-1" name="" value=""/>Pani puri
+                 </lable>
+             </div>
+             <div class="col-sm-6">
+                 <label class="list-group-item">
+                     <input type="radio" name="gender">Male
+                 </label>
+                 <label class="list-group-item">
+                     <input type="radio" name="gender"/>Female
+                 </label>
+             </div>
+             </div>
+             <hr/>
+             <!--links-->
+             <div class="row">
+             <div class="col-sm-6 list-group-item w-50">
+                 <a href="#" class="list-group-item list-group-item action">https://www.@google.com</a>
+             </div>
+             <div class="col-sm-6 list-group-item w-50">
+                 <a href="#" class="list-group-item list-group-item action">https://www.@gmail.com</a>
+             </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

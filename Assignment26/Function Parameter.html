@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Function in Javascript</title>
+    <script type="text/Javascript">
+    //define a function first then call the function
+    //function defination
+    let name='vindhya';
+    let age='20';
+    let city='punganur';
+    let mobilenumber=9989105700;
+    function user(name,age,city,mobilenumber)
+    {
+        document.write("user name :"+name+ "<br/>");
+        document.write("user age:"+age+ "<br/>");
+        document.write("user city:"+city+ "<br/>");
+        document.write("user mobilenumber:"+mobilenumber+ "<br/>");
+    }
+    let india=['mobile','laptop'];
+    let china='computer';
+    function inventory(india,china)
+    {
+        document.write(" indian inventorys :"+india+ "<br/>");
+        document.write("china inventorys :"+china+ "<br/>");
+       
+    }
+    //function call
+    user(name,age,city,mobilenumber);
+    document.write("---------------------------------------------------------------<br/>");
+    user("navya",23,"Banglore",7780519218);
+    document.write("---------------------------------------------------------------<br/>");
+    inventory(india,china);
+    document.write("---------------------------------------------------------------<br/>");
+    inventory(['pen','bulb'],'pencil');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

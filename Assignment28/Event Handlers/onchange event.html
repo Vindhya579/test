@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Event haldling  Onchange in Javascript</title>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+    <script type="text/javascript">
+    function changeevent()
+    {
+        var x=document.getElementById("input1").value;
+        document.getElementById("demo").innerHTML="You Selected :"+ x;
+    }
+        
+    </script>
+</head>
+<body>
+    <h1>onchange event</h1>
+    <select id="input1" onchange="changeevent()">
+        <option value="c">C</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="c++">C++</option>
+    </select>
+    <p id="demo"></p>
+
+</body>
+</html>
